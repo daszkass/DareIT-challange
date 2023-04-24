@@ -9,19 +9,32 @@ I hope this course will help me build strong practical skills and give me an ext
 > 1. What is this application for?
 
 It's an application for football scouts, that helps tracking players factors, matches and results. 
-> 2. What functionality the application has? What are they for? Are they intuitive or maybe you suggest to change something? 
+> 2. What functionality the application has? 
 - Adding players,
-- Adding reports - you can do it only from player page, what is not intuitive,
-- Adding matches - as above, 
-- Editing all above. 
+- Adding reports,
+- Adding matches, 
+- Editing all above,
+- Checking players list (user can filter it and print chosen records). 
 > 3. What do you think about application's interface? 
 - It is very simple and not contemporary,
 - It is pretty legible, but not attractive.
 > 4. Do you find this application intuitive?
 - It has small amount of functionality, but it makes it readable,
-- There is no signals, that you can open player's profile directly from players list, 
-- It is not intuitive, that you can open reports and matches only from players list,
-- There is no matches and reports lists.
+- Not intuitive aspects of application:
+  - Most of options are hidden rather than displayed on the main menu,
+  - There is no signals, that user can open player's profile directly from players list, 
+  - User can open matches only from players list,
+  - User cannot open report, he can only edit it, 
+  - User cannot add a new player directly from players list, only from Main Page,
+  - There is no matches and reports lists, 
+  - Creating report looks difficult and there is no instruction for it.
 > 5. Did you find some issues?
-- User can enter wrong data in fields (e.g. e-mail adress without `@`, `01/01/0001` as day of birth or number in the name),
-- User can't see that he can open player's profile from players list until he clicks (hover state is not presented).
+- In "Add player" form:
+  * User can enter wrong data in fields (e.g. email address without `@`, `01/01/0001` as day of birth or number in the name),
+  * User can add empty fields with languages and YT links, 
+- User can't see that he can open player's profile from players list until he clicks (hover state is not presented),
+- In polish translation: 
+  - On Main Page `Dev team contact` link is not translated,
+  - In Players list additional options like `print`, `filter`, etc. stayed in english,
+  - There should be `liczba` (number) instead of `ilość` (quantity) in players, matches, reports and actions count,
+  - There is mistake in phraze `Matches count` - should be `meczów`.
