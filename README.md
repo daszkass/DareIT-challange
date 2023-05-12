@@ -1,3 +1,21 @@
+## TASK 4
+#### [Mobile applacation testing](https://drive.google.com/drive/folders/1yxTjFEqYI2CXSA0N6PXuDxXxU-Pl7lYY?usp=share_link)
+* Subtask 1 - [Create Bug Report template](https://docs.google.com/spreadsheets/d/1TRDCKmZjgfsJW0UXAIaaiIacyPWnsYwI0JEJXClRrc8/edit?usp=share_link)
+* Subtask 2 - [Bug Reports](https://docs.google.com/spreadsheets/d/1txCLhi2Jo4TqBbSt3kbaXkxIhNQi9g9aq-n9JyAgIuw/edit?usp=share_link)
+> All bug reports were written based on bugs found during exploratory tests on the [OLX native application](https://play.google.com/store/apps/details?id=pl.tablica&hl=pl)
+#### Subtask 3 - What is [this application](https://play.google.com/store/apps/details?id=pl.tablica&hl=pl) for? 
+- The main purpose of the application is to allow users to post and view announcements. They mainly concern the sale of things, but there are also categories regarding job offers, services, renting or giving away for free.
+- Since the application tries to keep the "local announcements" formula, its end user is really anyone who has a smartphone and knows how to use it. For this reason, the application should be maximally easy to use, since even elder people can be interested in using it.
+- In my opinion the application is quite user friendly: 
+  - It has readable menu at the bottom of the screen with all needed options, 
+  - A search bar that prompts the results and remembers a few last queries,
+  - Categories are clear and easy to use,
+  - Adding announcements has well titled fields and not much steps, so user can post his announcement quickly.
+- Things to improve:
+  - After rotation to landscape view the interface becomes much less readable - pictures are too big and because top and bottom bars don't hide, the scope of view is tight and its impossible to see even one row of announcments at the time. I think it would be a good idea to hide at least the navigation bar on the scroll as it is in the mobile version of the app.
+  - During my tests, I had dozens of situations where some buttons start to malfunction or stop working at all. Restart of the app helped, but it happened too often and even after not long using of the app.
+#### Differences between native and web application testing
+
 ## TASK 3
 #### [Bug reporting](https://drive.google.com/drive/folders/1oSl8D3ko_Y8hhuUzTguV6xy_x33rWu3h?usp=share_link)
 * Subtask 1 - [Create Bug Report template](https://docs.google.com/spreadsheets/d/1VxV7bI9zvY5XAxRQWHCE8BjcvXpS_EVA-J633eHQRAk/edit?usp=share_link)
