@@ -14,7 +14,17 @@
 - Things to improve:
   - After rotation to landscape view the interface becomes much less readable - pictures are too big and because top and bottom bars don't hide, the scope of view is tight and its impossible to see even one row of announcments at the time. I think it would be a good idea to hide at least the navigation bar on the scroll as it is in the mobile version of the app.
   - During my tests, I had dozens of situations where some buttons start to malfunction or stop working at all. Restart of the app helped, but it happened too often and even after not long using of the app.
-#### Differences between native and web application testing
+#### Differences between web application and mobile testing
+- Different UI:
+  - Navigation with gestures requires different approach to the interface,
+  - Landscape and portrait view has to be checked,
+  - Mobile devices usually have smaller screens, so a different design is required to maintain readability. 
+- Mobile applications have to run on much more devices and softwares, so more environments has to be checked, 
+- Mobile native apps often have offline mode,
+- Limitations of:
+  - Battery life,
+  - Storage capacity.
+- Compatibility with external features, e.g. GPS or Bluetooth.
 
 ## TASK 3
 #### [Bug reporting](https://drive.google.com/drive/folders/1oSl8D3ko_Y8hhuUzTguV6xy_x33rWu3h?usp=share_link)
