@@ -1,3 +1,38 @@
+## TASK 5 
+#### SQL practise, part. I
+* Subtask 1 - learned COMMANDS: `SELECT`, `WHERE`, `ORDER BY`, `LIKE`, `IN`, `IS NULL`, `AND`, `OR`
+* Subtask 3 - Writing SQL queries
+##### 1. Display the 'actors' table in alphabetical order, sorting by the 'surname' column
+`SELECT * FROM actors ORDER BY surname`
+![screenshot1](https://drive.google.com/file/d/1KPYpqNo463xM9i1AXlbUfKJ44usIHpX6/view?usp=share_link)
+##### 2. Display a video that was made in 2019
+`SELECT * FROM movies WHERE year_of_production=2019`
+![screenshot2](https://drive.google.com/file/d/1pPIPUPI0PvovSaf7ZkKGycKXlb8Fvbu8/view?usp=share_link)
+##### 3. Display all movies made between 1900 and 1999
+`SELECT * FROM movies WHERE year_of_production BETWEEN 1900 AND 1999`
+![screenshot3](https://drive.google.com/file/d/1KUlzuGBXqfagUShqML6PY-A2oxpsT7tv/view?usp=share_link)
+##### 4. Display only the title and price of movies that cost less than $7
+`SELECT title, price FROM movies WHERE price<7`
+![screenshot4](https://drive.google.com/file/d/1j6Y0ErNFyuZIv_INhnOcDdcfozoMq3E9/view?usp=share_link)
+##### 5. Use the logical AND operator to display actors with actor_ids between 4-7 (4 and 7 should display). DO NOT USE BETWEEN operator
+`SELECT * FROM actors WHERE actor_id>=4 AND actor_id<=7`
+![screenshot5](https://drive.google.com/file/d/1nCpZeajxzCMszXo9tSQ2SHhKZ97vuDsu/view?usp=share_link)
+##### 6. Display customers with id 2,4,6, use logical operator for this
+`SELECT * FROM customers WHERE customer_id=2 OR customer_id=4 OR customer_id=6`
+![screenshot6](https://drive.google.com/file/d/1F670Szp_WLw0KuOY5e_53CHn7ppmhikU/view?usp=share_link)
+##### 7. Display customers with id 1,3,5, use IN operator for this
+`SELECT * FROM customers WHERE customer_id IN (1,3,5)`
+![screenshot7](https://drive.google.com/file/d/1b6i_eYoKwxsQf9bnCNZV6fVq2PZeQqDm/view?usp=share_link)
+##### 8. Display data of all people from the 'actors' table, whose name starts with 'An'
+`SELECT * FROM actors WHERE name LIKE 'An%'`
+![screenshot8](https://drive.google.com/file/d/1I0fDypk_GqVYNoDONZKsLX9GWwgCAQ1u/view?usp=sharing)
+##### 9. Display data of a customer, who does not have an email address provided
+`SELECT * FROM customers WHERE email IS NULL`
+![screenshot9](https://drive.google.com/file/d/1N7dHrp_rfDvQTYtqs6cCnjSXV19Ag4-V/view?usp=share_link)
+##### 10. Display all movies priced above $9 with IDs between 2 and 8
+`SELECT * FROM movies WHERE price>9 AND movie_id BETWEEN 2 AND 8`
+![screenshot10](https://drive.google.com/file/d/1Y6rNYl0NveQgksRwW73z-BexMHcTl16F/view?usp=sharing)
+
 ## TASK 4
 #### [Mobile applacation testing](https://drive.google.com/drive/folders/1yxTjFEqYI2CXSA0N6PXuDxXxU-Pl7lYY?usp=share_link)
 * Subtask 1 - [Create Bug Report template](https://docs.google.com/spreadsheets/d/1TRDCKmZjgfsJW0UXAIaaiIacyPWnsYwI0JEJXClRrc8/edit?usp=share_link)
