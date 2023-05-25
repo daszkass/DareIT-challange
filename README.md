@@ -1,3 +1,59 @@
+## TASK 6
+#### SQL practise, part. II
+* Subtask 2 - [Test result](http://getistqb.com/quiz-ecru/)
+`12/15`
+* Subtask 3 - [Create portfolio](https://github.com/daszkass/Portfolio)
+* Subtask 1 - Writing SQL queries
+##### 11. Fix the mistake in the Ania's surname - it should be "Miler" not "Muler"
+`UPDATE customers SET surname = "Miler" WHERE name = "Ania" `
+
+![screenshot11](./screenshots/capture-20230525-194014.jpg)
+##### 12. Check the name and email of client with ID 4. Use JOIN function.
+`SELECT customers.name, customers.surname, customers.email FROM customers`  
+`JOIN sale ON customers.customer_id = sale.customer_id`  
+`WHERE sale.movie_id = 4`
+
+![screenshot12](./screenshots/capture-20230525-194719.jpg)
+##### 13. There is no information about Patrycja's email, fix it.
+`UPDATE customers SET email = "pati@mail.com"`  
+`WHERE name = "Patrycja" AND email IS NULL`
+
+![screenshot13](./screenshots/capture-20230525-194928.jpg)
+##### 14. For each purchase display full name of customer and the movie title.
+`SELECT CONCAT (customers.name, ' ', customers.surname) AS full_name, movies.title FROM customers`  
+`JOIN sale ON customers.customer_id = sale.customer_id`  
+`JOIN movies ON sale.movie_id = movies.movie_id`
+
+![screenshot14](./screenshots/capture-20230525-195904.jpg)
+##### 15. Create nicknames for customers. Add a new "nickname" column and fill it acording to the pattern: two first letters of name and last letter of surname. 
+`ALTER TABLE customers ADD nickname varchar (255);`  
+`UPDATE customers SET nickname = CONCAT (LEFT(name, 2), RIGHT(surname, 1))`
+
+![screenshot15](./screenshots/capture-20230525-202546.jpg)
+##### 16. Display list of movie titles, display them so that the titles do not repeat.
+`SELECT DISTINCT title FROM movies`
+
+![screenshot16](./screenshots/capture-20230525-202723.jpg)
+##### 17. Display common list od customers and actors names (use UNION function). Sort the results alphabetically.
+`SELECT name FROM customers UNION SELECT name FROM actors`  
+`ORDER BY name`
+
+![screenshot17](./screenshots/capture-20230525-202941.jpg)
+##### 18. Increase the price of all movies produced after 2000 by 2,5
+`UPDATE moviesn SET price = price + 2.5`  
+`WHERE year_of_production > 2000`
+
+![screenshot18](./screenshots/capture-20230525-203708.jpg)
+##### 19. Display full name of actor with ID 4 and title of movie, where he played in.
+`SELECT actors.name, actors.surname, movies.title FROM actors`  
+`JOIN cast ON actors.actor_id = cast.actor_id`  
+`JOIN movies ON cast.movie_id = movies.movie_id`  
+`WHERE actors.actor_id = 4`
+##### 20. Add a new row to the customers table with the following data: ustomer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com, nickname = Hoa
+`INSERT INTO customers VALUES (7, 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa')`
+
+![screenshot20](./screenshots/capture-20230525-204703.jpg)
+
 ## TASK 5 
 #### SQL practise, part. I
 * Subtask 1 - learned COMMANDS: `SELECT`, `WHERE`, `ORDER BY`, `LIKE`, `IN`, `IS NULL`, `AND`, `OR`
